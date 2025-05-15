@@ -20,8 +20,8 @@ import Link from "next/link";
 export default function HomeContent() {
   return (
     <>
-      <section className="pt-16">
-        <h2 className="md:text-2xl text-lg mb-5">Currently working on...</h2>
+      <section>
+        <h2 className="text-3xl mt-10">Currently working on...</h2>
         <div className="flex gap-5 md:ml-5 mt-10 md:flex-row flex-col">
           <Card className="md:w-sm w-3xs p-10 flex flex-col items-center hover:bg-accent transition-colors duration-500">
             <Image
@@ -83,8 +83,8 @@ export default function HomeContent() {
         </div>
       </section>
 
-      <section className="pt-16">
-        <h2 className="text-2xl mb-5">Knowledge</h2>
+      <section>
+        <h2 className="text-3xl mt-10">Knowledge</h2>
         <div className="flex md:flex-row flex-col">
           {knowledgeSections.map((section, idx) => (
             <KnowledgeCard
